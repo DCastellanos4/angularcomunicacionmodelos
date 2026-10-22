@@ -1,0 +1,12 @@
+<h1>Listado de productos</h1>
+@if (producto != null) {
+  <h1>Nombre: {{ producto.nombre }}</h1>
+  <h1><img src="{{ producto.imagen }}" /></h1>
+  <h1>Precio: {{ producto.precio }}€</h1>
+}
+@for (p of listaproductos; track $index) {
+  <h1>Nombre: {{ p.nombre }}</h1>
+  <h1><img src="{{ p.imagen }}" /></h1>
+  <h1>Precio: {{ p.precio }}€</h1>
+  <hr/>
+}
