@@ -1,0 +1,10 @@
+<h1>Padre numeros</h1>
+<h2>{{mensaje}}</h2>
+<button (click)="generarNumeros()">Generar numeros</button>
+<ul>
+  @for (n of lista; track n) {
+    <li>
+      <app-hijo-numeros [n]="n" (sumar)="sumar($event)"></app-hijo-numeros>
+    </li>
+  }
+</ul>
