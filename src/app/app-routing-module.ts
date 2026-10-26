@@ -8,13 +8,20 @@ import { PadreCoche } from './components/padre-coche/padre-coche';
 import { HijoCoche } from './components/hijo-coche/hijo-coche';
 import { PadreDeportes } from './components/padre-deportes/padre-deportes';
 import { PadreNumeros } from './components/padre-numeros/padre-numeros';
+import { ComicSimple } from './components/comic-simple/comic-simple';
+import { ComicJson } from './components/comic-json/comic-json';
+import { ComicExcel } from './components/comic-excel/comic-excel';
 
 const routes: Routes = [
   { path: "", component: HomeComponent },
   { path: "productos", component: ListaProductos },
   { path: "coches", component: PadreCoche },
   { path: "deportes", component: PadreDeportes },
-  { path: "numeros", component: PadreNumeros }
+  { path: "numeros", component: PadreNumeros },
+  { path: "comics", component: ComicSimple },
+  { path: "comicsjson", component: ComicJson },
+  { path: "comicsexcel", component: ComicExcel },
+
 ];
 
 @NgModule({

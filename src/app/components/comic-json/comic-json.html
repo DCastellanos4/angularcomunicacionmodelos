@@ -1,0 +1,7 @@
+<h1>Comic JSON</h1>
+<button (click)="cargarComics()">Cargar comics</button>
+@for (c of arrayComics; track c) {
+  <h4 style="color: aqua">{{ c.titulo }}</h4>
+  <p>{{ c.desc }}</p>
+  <h4><img [src]="c.imagen" [alt]="c.titulo" style="width: 80px; height: 100px" /></h4>
+}

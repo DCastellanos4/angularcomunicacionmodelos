@@ -7,8 +7,9 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
   templateUrl: './hijo-numeros.html',
 })
 export class HijoNumeros {
-  @Input() n!: Number;
-  @Output() sumar: EventEmitter<any> = new EventEmitter();
+  @Input() n!: number;
+  @Output() sumar = new EventEmitter<number>();
+
   sumarN(): void {
     this.sumar.emit(this.n);
   }
